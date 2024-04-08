@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "Yu Mincho";
+}
+
+.header {
+    background-color: rgb(18, 22, 12);
+    height: 100px;
+    color: rgb(255, 255, 255);
+}
+
+.header-logo {
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px 20px 20px;
+}
+
+.header-list li {
+    font-size: 20px;
+    padding: 33px 20px;
+    float: right;
+}
+
+.header-list :hover {
+    background-color: green;
+    transition-duration: 0.5s;
+}
+
+.main {
+    background-color: rgb(227, 255, 202);
+    height: 1500px;
+}
+
+.main h1 {
+    margin: auto;
+    padding: 40px 30px 10px 30px;
+    text-align: center;
+}
+
+.video {
+    z-index: -1;
+    overflow: hidden;
+    /*天地中央配置*/
+    position: absolute;
+    
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*縦横幅指定*/
+    width: 177.77777778vh;
+    /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+    height: 40.25vw;
+    /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.container {
+    height: 350px;
+    font-size: 30px;
+    padding: 0px 15px 0px 15px;
+    margin: 0 auto;
+    position: relative;
+    text-align : center;
+}
+
+.top-wrapper {
+    padding: 0px 0px 230px 0px;
+    color: rgb(255, 255, 255);
+}
+
+.contents-img {
+    float: left;
+    padding: 10px 10px 0px 10px;
+    margin: 20px 10px 20px 10px;
+    border-color: rgb(255, 255, 255);
+}
+
+.contents {
+    justify-content: space-around;
+    text-align: center;
+    vertical-align: bottom;
+    animation: fadeIn 1.2s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+    display: flex;
+    justify-content: center;
+}
+
+.contents :hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+.main h1 {
+    animation: fadeIn 1.2s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.footer {
+    background-color: rgb(100, 78, 52);
+    color: rgb(255, 255, 255);
+    height: 120px;
+    padding: 20px;
+}
+
+.footer-logo {
+    float: left;
+    font-size: 32px;
+    padding: 39px 10px;
+}
+
+.footer-list {
+    float: right;
+}
+
+.footer-list li {
+    padding-bottom: 10px;
+}
